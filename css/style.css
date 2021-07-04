@@ -24,6 +24,7 @@ li, p {
 a:link {
     font-weight: bold;
     color: #91BC3C;
+    background-color: #F4EFD2;
 }
 
 a:visited {
