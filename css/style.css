@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+}
+
+nav, footer {
+    background: radial-gradient(#F4EFD2, #F3D944, #D8E33D, #91BC3C);
+}
+
+.centered {
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    padding: 10px 0;
+}
+
+li, p {
+    font-family: 'Zilla Slab', serif;
+    font-size: 1.5em;
+    margin: 10px;
+}
+
+a:link {
+    font-weight: bold;
+    color: #91BC3C;
+}
+
+a:visited {
+    color: #24310C;
+}
+
+a:hover {
+    background-color: #24310C;
+    color: #F4EFD2;
+}
+
+a:active {
+    color: #F3D944;
+}
+
+h1 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 4em;
+    text-align: center;
+    font-weight: 700;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 3em;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+p.titilliumWeb, p.yanoneKaffeesatz, p.zillaSlab {
+    width: 250px;
+    display: inline-block;
+    margin: 20px;
+    border: 1px dashed #24310C;
+    padding: 15px;
+    background-color: #F4EFD2;
+}
+
+p.titilliumWeb {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.5em;
+}
+
+p.yanoneKaffeesatz {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 1.85em;
+    letter-spacing: 2px;
+}
+
+p.zillaSlab {
+    font-family: 'Zilla Slab', serif;
+    font-size: 1.5em;
+}
+
+.beige, .khaki, .lightgreen, .green, .darkgreen {
+    height: 250px;
+    width: 250px;
+    border: 1px solid #24310C;
+    border-radius: 25px;
+    margin: 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+.beige {
+    background-color: #F4EFD2;
+}
+
+.khaki {
+    background-color: #F3D944;
+}
+
+.lightgreen {
+    background-color: #D8E33D;
+}
+
+.green {
+    background-color: #91BC3C;
+}
+
+.darkgreen {
+    background-color: #24310C;
+}
+
+.beige p, .khaki p, .lightgreen p, .green p, .darkgreen p {
+    visibility: hidden;
+    background-color: #24310C;
+    color: #F4EFD2;
+}
+
+.beige:hover p, .khaki:hover p, .lightgreen:hover p, .green:hover p, .darkgreen:hover p {
+    visibility: visible;
+}
+
+.mainHeading, .minorHeadings, .paraAndListItems {
+    width: 300px;
+    display: inline-block;
+    margin: 20px;
+    border: 1px dashed #24310C;
+    padding: 15px;
+    background-color: #F4EFD2;
+}
+
+footer p {
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+}
+
+
+
