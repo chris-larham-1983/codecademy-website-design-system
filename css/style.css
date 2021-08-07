@@ -6,6 +6,10 @@ nav, footer {
     background: radial-gradient(#F4EFD2, #F3D944, #D8E33D, #91BC3C);
 }
 
+header, footer {
+    border-radius: 5px;
+}
+
 .centered {
     text-align: center;
 }
@@ -19,6 +23,12 @@ li, p {
     font-family: 'Zilla Slab', serif;
     font-size: 1.5em;
     margin: 10px;
+}
+
+a {
+    border: 1px solid #24310C;
+    border-radius: 5px;
+    padding: 5px;
 }
 
 a:link {
@@ -61,6 +71,7 @@ p.titilliumWeb, p.yanoneKaffeesatz, p.zillaSlab {
     border: 1px dashed #24310C;
     padding: 15px;
     background-color: #F4EFD2;
+    border-radius: 5px;
 }
 
 p.titilliumWeb {
@@ -126,6 +137,7 @@ p.zillaSlab {
     border: 1px dashed #24310C;
     padding: 15px;
     background-color: #F4EFD2;
+    border-radius: 5px;
 }
 
 footer p {
