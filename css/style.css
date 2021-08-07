@@ -4,9 +4,6 @@
 
 nav, footer {
     background: radial-gradient(#F4EFD2, #F3D944, #D8E33D, #91BC3C);
-}
-
-header, footer {
     border-radius: 5px;
 }
 
