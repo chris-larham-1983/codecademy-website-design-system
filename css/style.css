@@ -55,21 +55,53 @@ a:active {
     color: #F3D944;
 }
 
-/* remove the border for the <a> elements that are used to offset the fixed <header> when the internal page links are clicked: */
-a[id="offset_fonts"], a[id="offset_typography"] {
+/* remove the border for the <a> elements that are used to offset the fixed <header> when the internal page links are clicked; also sets the width, 
+   horizontal text alignment, display, font family, and font size properties of these elements: */
+a[id="offset_colors"], a[id="offset_fonts"], a[id="offset_typography"] {
     border: none;
+    width: 100%;
+    text-align: center;
     display: inline-block;
+    font-family: 'Zilla Slab', serif;
+    font-size: 1em;
 }
 
-a[id="offset_colors"] {
-    display: inline;
-    border: none;
-}
-
-/* add 100px of top padding to internal page anchors when the user navigates thereto so that the target <section> elements
-are correctly displayed (i.e. not hidden behind the 100px-tall fixed <header>): */
+/* sets a height value of 100px to internal page anchors when the user navigates thereto so that the target <section> elements
+are correctly displayed (i.e. not hidden behind the 100px-tall fixed <header>); also ensures that the text will be centred vertically, and sets border, 
+background color, and color properties: */
 :target {
-    padding-top: 100px;
+    border: 2px solid #91BC3C;
+    border-radius: 5px;
+    color: #F4EFD2;
+    background-color: #24310C;
+    height: 100px;
+    line-height: 100px;
+}
+
+/* adds text content to the page anchor that offsets the fixed <header> when the 'colors' <section> is navigated to: */
+a[id="offset_colors"]:target::after {
+    content: "~ Style: Colors ~";
+}
+
+/* adds text content to the page anchor that offsets the fixed <header> when the 'fonts' <section> is navigated to: */
+a[id="offset_fonts"]:target::after {
+    content: "~ Style: Fonts ~";
+}
+
+/* adds text content to the page anchor that offsets the fixed <header> when the 'typography' <section> is navigated to: */
+a[id="offset_typography"]:target::after {
+    content: "~ Style: Typography ~";
+}
+
+/* define the background color of the <a> elements whose purpose is to offset the fixed <header> when the cursor is hovered thereon: */
+a[id="offset_colors"]:hover, a[id="offset_fonts"]:hover, a[id="offset_typography"]:hover {
+    background-color: transparent;
+}
+
+/* define the background color of the <a> elements whose purpose is to offset the fixed <header> when they are the target of internal page navigation 
+and the cursor is hovered thereon: */
+a[id="offset_colors"]:target:hover, a[id="offset_fonts"]:target:hover, a[id="offset_typography"]:target:hover {
+    background-color: #24310C;
 }
 
 header h1 {
